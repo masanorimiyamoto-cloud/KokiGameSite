@@ -1,0 +1,76 @@
+/* style2.css */
+body {
+    /* 背景画像 */
+    background: url(./th.jpg);
+  }
+  
+  .container {
+    font-size: 0; /* ボタンの余白をなくす */
+  }
+  
+  #title {
+    /* 配置 */
+    text-align: center;
+    /* 色 */
+    color: antiquewhite;
+  }
+  
+  #board {
+    /* 配置 */
+    margin: 5rem auto;
+    /* サイズ */
+    width: 40rem;
+    height: 40rem;
+    /* 色 */
+    background-color: black;
+    outline: 1.5rem solid black;
+  }
+  
+  .board-row {
+    display: flex; /* 横に並べる */
+  }
+  
+  /* 盤面のマスボタン */
+  .square {
+    /* サイズ */
+    width: 5rem;
+    height: 5rem;
+  
+    /* 色 */
+    background-color: green;
+    box-shadow: none !important;
+  
+    /* フォントサイズ */
+    font-size: 2.5rem;
+  
+    /* フォント配置 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  /* ピースが置かれたらクリック不可に */
+  .selected {
+    pointer-events: none;
+  }
+  
+  /* ピースの色: 黒 */
+  .black {
+    color: black;
+  }
+  
+  /* ピースの色: 白 */
+  .white {
+    color: white;
+    background-color: black; /* 黒背景に白文字で白石を表現 (反転表現) */
+    border-radius: 50%;
+  }
+  
+  /* リセットボタン配置 */
+  #controller {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+  }
+  
